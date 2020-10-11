@@ -24,9 +24,40 @@
 			margin-bottom: 80px;
 		}
 	</style>
+
+	<script>
+function setColor(color) {
+	var alist = document.querySelectorAll('a');
+	var i = 0;
+	while(i < alist.length){
+		alist[i].style.color = color;
+		i = i+1;
+	}
+}
+function nightDayHandler(self){
+	var target=document.querySelector('body');
+	if(self.value==='night'){
+		target.style.backgroundColor='black';
+		target.style.color='white';
+		self.value='day';
+
+		setColor('powderblue');
+	} else{
+		target.style.backgroundColor='white';
+		target.style.color='black';
+		self.value='night';
+
+		setColor('blue');
+	}
+}
+
+</script>
 </head>
 
 <body>
+	<input id="night_day" type="button" value="night" onclick="
+		nightDayHandler(this);
+	">
 <h1><a href="index.html" style="color:white">본죽 review</a></h1>
 <ol>
 	<li><a href="new.html">본죽 신메뉴 소개</a></li>

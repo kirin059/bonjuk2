@@ -24,9 +24,41 @@
 			margin-bottom: 80px;
 		}
 	</style>
+
+	<script>
+function setColor(color) {
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+    alist[i].style.color = color;
+    i = i+1;
+  }
+}
+function nightDayHandler(self){
+  var target=document.querySelector('body');
+  if(self.value==='night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    self.value='day';
+
+    setColor('powderblue');
+  } else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    self.value='night';
+
+    setColor('blue');
+  }
+}
+
+</script>
 </head>
 
 <body>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+
 <h1><a href="index.html" style="color:white">본죽 review</a></h1>
 <ol>
 	<li><a href="new.html">본죽 신메뉴 소개</a></li>
@@ -34,6 +66,7 @@
 	<li><a href="marketing.html">최근(2020)마케팅 전략</a></li>
 </ol>
 <p style="margin-bottom:40px;"><a href="https://www.bonif.co.kr/brand?brdCd=BF101" target="_blank" title="bonjuk"><mark style="background-color:#B45F04">본죽 공식 홈페이지 바로가기</mark></a></p>
+
 <img src="img1.jpg" width="100%">
 </body>
 </html>
