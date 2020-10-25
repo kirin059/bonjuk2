@@ -16,6 +16,11 @@ a.hover{
     width: 1px;
     height: 1px;
   }
+  .js-clock{
+    display: inline;
+    width: 20px;
+    padding:0;
+  }
 h1{
 	text-align:center;
 	padding: 96px;
@@ -26,7 +31,7 @@ h1{
     vertical-align: middle;
     margin:0;
 }
-        
+
 ul{
 	list-style-position: inside;
     font-size: 20px;
@@ -37,8 +42,9 @@ ul{
     margin:12px
 }
 .whole{
-    grid-template-columns: 200px 1;
-    grid-template-rows: 300px 80px 1;
+  display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 300px 200px 1fr;
     margin: 0;
 }
 .header{
@@ -67,12 +73,12 @@ ul{
     grid-row-end: 4;
     margin:0px;
     padding:0px;
-    background-color: peru;
+  border-right: peru solid 2px;
 }
 .article{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-  
+
 }

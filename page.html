@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 
     <script src="night.js"></script>
-   
+
 </head>
 
 <body>
@@ -13,7 +13,12 @@
     var target=document.querySelector('body')
       nightDayHandler(this);
     ">
-  <div class="container">
+		<div class="js-clock">
+			<span class="js-title"></span>
+		</div>
+		<script src="clock.js"></script>
+
+  <div class="whole">
   <div class="header">
     <h1>
 		<button style="height: 50px; width: 80px;">
@@ -29,9 +34,9 @@
       </ul>
   </div>
 <div class="side">
-	
+
 </div>
-<div class="article"> 
+<div class="article">
 
 
         <div class="page">
@@ -41,12 +46,6 @@
 
 </div>
 
-
-
-    <div class="js-clock">
-        <h1 class="js-title"></h1>
-    </div>
-    <script src="clock.js"></script>
 </div>
 </body>
 </html>
