@@ -3,74 +3,51 @@
 <head>
 	<title>본죽소개</title>
 	<meta charset="utf-8">
-	<style>
-		a{
-			color:#4B088A;
-	    text-decoration:none;
-		}
-
-		h1{
-			font-size: 60px;
-			text-align:center;
-			border-bottom: 6px #610B0B solid;
-			padding: 30px;
-			background-color: #610B0B
-		}
-		ol{
-			list-style-position: inside;
-			font-size: 15px;
-			border-bottom: 2px #610B0B solid;
-			padding: 30px;
-			margin-bottom: 80px;
-		}
-	</style>
-
-	<script>
-function setColor(color) {
-	var alist = document.querySelectorAll('a');
-	var i = 0;
-	while(i < alist.length){
-		alist[i].style.color = color;
-		i = i+1;
-	}
-}
-function nightDayHandler(self){
-	var target=document.querySelector('body');
-	if(self.value==='night'){
-		target.style.backgroundColor='black';
-		target.style.color='white';
-		self.value='day';
-
-		setColor('powderblue');
-	} else{
-		target.style.backgroundColor='white';
-		target.style.color='black';
-		self.value='night';
-
-		setColor('blue');
-	}
-}
-
-</script>
+	<link rel="stylesheet" href="index.css" />
+	<script src="night.js"></script>
 </head>
 
 <body>
-	<input id="night_day" type="button" value="night" onclick="
-		nightDayHandler(this);
+	<input type="button" value="night" onclick="
+	var target=document.querySelector('body')
+	  nightDayHandler(this);
 	">
-<h1><a href="index.html" style="color:white">본죽 review</a></h1>
-<ol>
-	<li><a href="new.html">본죽 신메뉴 소개</a></li>
-	<li><a href="favorite.html">내가 뽑은 최애 메뉴 소개</a></li>
-	<li><a href="marketing.html">최근(2020)마케팅 전략</a></li>
-</ol>
 
-단호박은 제가 입맛이 없을 때나 간식이 생각날 때 즐겨먹는 음식이에요. 비타민과 식이섬유가 풍부해 건강에도 좋은 단호박으로 만든 '단호박죽'을 최애메뉴로 뽑았어요!<br>
-<h2>단호박죽(9,000원)</h2>
-<br>
-<img src="img3.jpg" width="100%">
-<p style="margin-bottom:45px;"><strong>100% 단호박으로 진하게 끓여낸, 단호박죽</strong></p>
-다른 첨가물 없이 100% 단호박으로 끓여 내어 더욱 진한 단호박 그대로의 맛. 부드럽고 달달하면서도 영양 가득한 한 그릇을 추천합니다.<br>
-동글동글 쫄깃쫄깃 새알심이 동동! 뜨끈한 죽과 호호 불어 함께 곁들이며 든든하고 즐거운 한 그릇을 만나보세요.
+<div class="js-clock">
+	<h1 class="js-title"></h1>
+</div>
+<script src="clock.js"></script>
+
+
+
+  <div class="whole">
+  <div class="header">
+	<h1>
+		<button style="height: 50px; width: 80px;">
+			<a href="index.html">main</a>
+		</button>
+	</h1>
+  </div>
+  <div class="list">
+	  <ul>
+		  <li><a href="new.html">본죽 신메뉴 소개</a></li>
+		  <li><a href="favorite.html">내가 뽑은 최애 메뉴 소개</a></li>
+		  <li><a href="marketing.html">최근(2020)마케팅 전략</a></li>
+	  </ul>
+  </div>
+<div class="side">
+	
+</div>
+<div class="article">
+	단호박은 제가 입맛이 없을 때나 간식이 생각날 때 즐겨먹는 음식이에요. 비타민과 식이섬유가 풍부해 건강에도 좋은 단호박으로 만든 '단호박죽'을 최애메뉴로 뽑았어요!<br>
+	<h2>단호박죽(9,000원)</h2>
+	<br>
+	<button type="button" onClick="location.href='page.html'">click here</button></button>
+	<img src="img3.jpg" width="100%">
+	<p style="margin-bottom:45px;"><strong>100% 단호박으로 진하게 끓여낸, 단호박죽</strong></p>
+	다른 첨가물 없이 100% 단호박으로 끓여 내어 더욱 진한 단호박 그대로의 맛. 부드럽고 달달하면서도 영양 가득한 한 그릇을 추천합니다.<br>
+	동글동글 쫄깃쫄깃 새알심이 동동! 뜨끈한 죽과 호호 불어 함께 곁들이며 든든하고 즐거운 한 그릇을 만나보세요.
+</div>
+</div>
 </body>
 </html>

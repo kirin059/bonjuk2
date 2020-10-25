@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+}
+a.hover{
+    text-decoration:underline;
+}
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+  }
+h1{
+	text-align:center;
+	padding: 96px;
+    background-image: url(./logo.jpg);
+    background-size: 353px 241px;
+    background-position: 550px -28px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin:0;
+}
+        
+ul{
+	list-style-position: inside;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:12px
+}
+.whole{
+    grid-template-columns: 200px 1;
+    grid-template-rows: 300px 80px 1;
+    margin: 0;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+.list{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    list-style-position: inline-block;
+    display: inline-block;
+    vertical-align: middle;
+    margin:0;
+    padding:0;
+    background-color:teal;
+}
+.side{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin:0px;
+    padding:0px;
+    background-color: peru;
+}
+.article{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  
+}
