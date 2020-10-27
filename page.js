@@ -1,26 +1,6 @@
-    /*
-    var numberList=[1,2,3,4,5,6,7,8,9];
-    var numberArray=[];
 
-    for(var i = 0; i<4; i=i+1){
-        var pick=numberList.pop();  //pop은 마지막 순서대로 뽑는것(9,8,7,6)  =  뽑는것  
-        numberArray.unshift(pick);     //push는 마지막 순서대로 추가하는 것 (9,8,7,6)  =  넣는것  
-        }
-  
-        document.write(numberArray);
-//shift는 처음 순서대로 뽑기(1,2,3,4)  =  뽑는것
-//unshift 처음 순서대로 추가하는 것(4,3,2,1)  = 넣는것
-//splice()  랜덤으로 뽑는 것 -> splice(3(자리수), 2(뽑으려는 갯수)) - 3번째 자리 이후부터 2개를 뽑겠다(4,5)
-//splice(math.floor(math.random()*9),1)[0];
-    for(var i = 0; i<6; i=i+1){
-        var pick=numberList.shift();  //pop은 마지막 순서대로 뽑는것(9,8,7,6)  =  뽑는것  
-        numberArray.push(pick);     //push는 마지막 순서대로 추가하는 것 (9,8,7,6)  =  넣는것  
-        }
 
-        document.write(numberArray);
-    */
-
-    const page1=document.querySelector(".page")   
+    const page1=document.querySelector(".page")
     function intro(soup, taste){
         return(`I like 본죽 brand and ${soup}  is so ${taste} <br>`);
     }
@@ -42,7 +22,7 @@
         // const title=document.querySelector("#title");
         title.innerHTML="Hi! Im going to introduce about the list of dishes and it's taste";
         title.style.color="peru"
-        
+
         console.log(document)
 
         const base_color="peru";
@@ -61,7 +41,5 @@
             title.style.color=base_color
             title.addEventListener("click", handleClick);
         }
-        
+
         init();
-        
-        

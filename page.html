@@ -3,49 +3,62 @@
 <head>
 	<title>본죽소개</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="index.css" />
+	<script src="night.js"></script>
 
-    <script src="night.js"></script>
+
 
 </head>
 
 <body>
-    <input type="button" value="night" onclick="
-    var target=document.querySelector('body')
-      nightDayHandler(this);
-    ">
-		<div class="js-clock">
-			<span class="js-title"></span>
-		</div>
-		<script src="clock.js"></script>
+  <input type="button" value="night" onclick="
+  var target=document.querySelector('body')
+    nightDayHandler(this);
+  ">
 
-  <div class="whole">
-  <div class="header">
-    <h1>
-		<button style="height: 50px; width: 80px;">
-			<a href="index.html">main</a>
-		</button>
-	</h1>
-  </div>
-  <div class="list">
-      <ul>
-          <li><a href="new.html">본죽 신메뉴 소개</a></li>
-          <li><a href="favorite.html">내가 뽑은 최애 메뉴 소개</a></li>
-          <li><a href="marketing.html">최근(2020)마케팅 전략</a></li>
-      </ul>
-  </div>
-<div class="side">
-
+<div class="js-clock">
+	<span class="js-title"></span>
+	<script src="clock.js"></script>
 </div>
+
+<div class="whole">
+
+ /*
+ 	<div class="header">
+		<h1>
+			<button style="height: 50px; width: 80px;">
+				<a href="index.html">main</a>
+			</button>
+		</h1>
+	</div>
+ */
+
+	<div class="list">
+		<ul>
+			<li><a href="new.html">본죽 신메뉴 소개</a></li>
+			<li><a href="favorite.html">내가 뽑은 최애 메뉴 소개</a></li>
+			<li><a href="marketing.html">최근(2020)마케팅 전략</a></li>
+		</ul>
+	</div>
+
+	<div class="side">
+		<h3 style="text-align:center;">
+		<a href="https://www.bonif.co.kr/brand?brdCd=BF101" target="_blank" title="bonjuk">I LOVE BONJUK</a>
+	  </h3>
+	</div>
+
 <div class="article">
-
-
-        <div class="page">
-            <h2 id="title"; handleClick(this)></h2>
-        </div>
-        <script src="page.js"></script>
+	     <div class="page">
+	         <h2 id="title"; handleClick(this)></h2>
+	     </div>
+	     <form class="js-form">
+	       <input type="text" placeholder="what is your favorite one?" />
+	     </form>
+	     <script src="page.js"></script>
 
 </div>
 
 </div>
+	<button type="button" onClick="location.href='page.html'">click here</button>
 </body>
 </html>
